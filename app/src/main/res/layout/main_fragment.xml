@@ -3,24 +3,32 @@
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
-  android:id="@+id/main"
+  android:id="@+id/mainToSecond"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   tools:context=".ui.main.MainFragment">
   <Button
     android:id="@+id/button"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="308dp"
+    android:layout_marginEnd="147dp"
     android:text="Button"
-    tools:layout_editor_absoluteX="154dp"
-    tools:layout_editor_absoluteY="365dp"/>
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    />
   <EditText
     android:id="@+id/userText"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="188dp"
+    android:layout_marginBottom="190dp"
+    android:layout_marginEnd="76dp"
     android:ems="10"
     android:inputType="textPersonName"
     android:text="Name"
-    tools:layout_editor_absoluteX="68dp"
-    tools:layout_editor_absoluteY="143dp"/>
+    app:layout_constraintBottom_toBottomOf="@+id/button"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
 </androidx.constraintlayout.widget.ConstraintLayout>
